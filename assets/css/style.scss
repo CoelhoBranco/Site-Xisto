@@ -3,9 +3,8 @@
     padding: 0;
     color: #FFFFFF;
     //background:red;
-  
-        font-family: 'Roboto', sans-serif;
-        
+    font-family: 'Roboto', sans-serif;
+    font-size:24px;
 }
 
 body{
@@ -13,89 +12,112 @@ body{
     background-image: url('../img/fundo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    //position: absolute;
     width: 100%;
     height:100%;
 
     .retangulo{
-        
+        font-size:15px;
         position: absolute;
         width: 100%;
         height:100%;
-        left: 0px;
-        top: 0px;
         
         background-color: rgba(27, 76, 31, 0.25);
         transform: rotate(0.02deg);
-
-            
-    }
-        
-    background-repeat: no-repeat;
-    width: 100%;
-    height:100%;
-    /* Xisto_LogoHorizontalContorno 1 */
-    #logo{
-        min-width: 600px;
-        min-height: 600px;
         background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        left: 30.25%;
-        right: 30.25%;
-        top: 5.1666%;
-        bottom: 28.2%;
-        width: auto;
-        height: auto;
-
-        background-image: url('../img/logo.png');
+    
+            //retangulo acaba aqui            
+            }       
+        //body aqui 
         }
+       
+        /* Xisto_LogoHorizontalContorno 1 */
+        #logo{
+            //mudar posião da logo
+            min-width: 600px;
+            min-height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 30.25%;
+            right: 30.25%;
+            top: 5.1666%;
+            bottom: 28.2%;
+            width: auto;
+            height: auto;
+
+            background-image: url('../img/logo.png');
+            }
 
 
     /* Xisto_LogoHorizontalContorno 1 */
     main{
-        #btn2{
-            //nossos serviços
-            position: absolute;
-            width:22.91667%;
-            height: 6.3333%;
-            left: 56.6667%;
-
-            top: 54.84388%;
-            
-     
-
-
-            border: 1px solid #E5E5E5;
-            box-sizing: border-box;
-            border-radius: 100px;
+        .btns{
+            margin-top:53vh; 
+            display:flex;
+            //align-content: center;
             justify-content: center;
-            text-align: center;
-            align-content: center;
+            padding:50%, 50px, 50px, 50px;
             
             
-            span{
-                
-                justify-content: center;
-                text-align: center;
-                align-content: center;
 
-                                
-                position: absolute;
-                width: 14.58333%;
-                height: 3.709248%;
-                left: 60.75%;
-                top: 36.5%;
-            
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 300%;
-            
+            #btn1{
+                    
+                box-sizing: border-box;
+                border-radius: 100px;
+                //justify-content: center;
+                //text-align: center;
+                //align-content: center;
+                padding:20px;
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-right: 70px;
+                
+                background: rgba(27, 76, 31, 0.71);
+
+                span{
+                    
+                    justify-content: center;
+                    text-align: center;
+                    align-content: center;
+       
+                    font-style: normal;
+                    //font-weight: 300;
+                    }
                 }
-            }
-            }
- 
+            
+            #btn2{
+                //nossos serviços
+            
+                border: 1px solid #E5E5E5;
+                box-sizing: border-box;
+                border-radius: 100px;
+                //justify-content: center;
+                //text-align: center;
+                //align-content: center;
+                padding:20px;
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-left: 100px;
+                span{
+                    
+                    justify-content: center;
+                    text-align: center;
+                    align-content: center;
+                    
+                    
+                                        
+                        
+                    
+                    font-style: normal;
+                    //font-weight: 300;
+                    
+                
+                    }
+                }
+                }
+        
+        }
     img{
     top: 0px;
     position: relative;
@@ -108,50 +130,60 @@ body{
     //left: -163px;
     //top: -1357px;
 }
-    
+
 nav{
     text-align: right;
     //padding-left: 0px;
     align-content: center;
     //left: 955px;
-  
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 500%;
+    //font-style: normal;
+    //font-weight: normal;
+    
+    //padding-top:5% ;
     /* identical to box height */
 
-
- 
     //linha
-    position: absolute;
+    //position:fixed;
+    top:10%;
+    right: 0px;
+    //margin-bottom: 10px;
     width: 100%;
     height: 10%;
     //left: 0px;
-    top: 0px;
+   
     border-bottom: 1px solid #FFFFFF;
-    
-
-    padding-left: -500%;
+    //margin-bottom: 10%;       
     ul{
-        
+        padding-top: 1%;
+        padding-bottom:1%;
+        //margin-top: ;
+        align-content: center;
+        justify-content: center;
         li{
-            
+            //justify-content: center;
             text-align: right;
-            padding-top: 50%;
+            //padding-top: 50%;
             padding-right: 3%;
             //align-content: center;
             //left: 955px;
             vertical-align: middle;    
             display: inline;
+            
             a{
+                margin-bottom:10px;    
+                font-size: 15px;
                 text-decoration: none;    
                 }
             }
             //#blog{
-              //  margin-right: 15px;
+            //  margin-right: 15px;
             //}
-        }
-    }       
+        }     
+}
+
+.text{
+    //margin-left: 10%;
+    display:flex;
+    justify-content: center;
+    margin-top:3%;
 }

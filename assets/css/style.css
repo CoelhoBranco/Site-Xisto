@@ -3,34 +3,30 @@
   padding: 0;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
+  font-size: 24px;
 }
 
 body {
   background-image: url("../img/fundo.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  /* Xisto_LogoHorizontalContorno 1 */
-  /* Xisto_LogoHorizontalContorno 1 */
 }
 
 body .retangulo {
+  font-size: 15px;
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0px;
-  top: 0px;
   background-color: rgba(27, 76, 31, 0.25);
   -webkit-transform: rotate(0.02deg);
           transform: rotate(0.02deg);
+  background-repeat: no-repeat;
 }
 
-body #logo {
+/* Xisto_LogoHorizontalContorno 1 */
+#logo {
   min-width: 600px;
   min-height: 600px;
   background-repeat: no-repeat;
@@ -45,43 +41,61 @@ body #logo {
   background-image: url("../img/logo.png");
 }
 
-body main #btn2 {
-  position: absolute;
-  width: 22.91667%;
-  height: 6.3333%;
-  left: 56.6667%;
-  top: 54.84388%;
+/* Xisto_LogoHorizontalContorno 1 */
+main .btns {
+  margin-top: 53vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50%, 50px, 50px, 50px;
+}
+
+main .btns #btn1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 70px;
+  background: rgba(27, 76, 31, 0.71);
+}
+
+main .btns #btn1 span {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-style: normal;
+}
+
+main .btns #btn2 {
   border: 1px solid #E5E5E5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 100px;
 }
 
-body main #btn2 span {
+main .btns #btn2 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  position: absolute;
-  width: 14.58333%;
-  height: 3.709248%;
-  left: 60.75%;
-  top: 36.5%;
   font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 300%;
 }
 
-body img {
+img {
   top: 0px;
   position: relative;
   max-width: 100%;
@@ -92,32 +106,48 @@ body img {
   top: 0px;
 }
 
-body nav {
+nav {
   text-align: right;
   -ms-flex-line-pack: center;
       align-content: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 500%;
   /* identical to box height */
-  position: absolute;
+  top: 10%;
+  right: 0px;
   width: 100%;
   height: 10%;
-  top: 0px;
   border-bottom: 1px solid #FFFFFF;
-  padding-left: -500%;
 }
 
-body nav ul li {
+nav ul {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
   text-align: right;
-  padding-top: 50%;
   padding-right: 3%;
   vertical-align: middle;
   display: inline;
 }
 
-body nav ul li a {
+nav ul li a {
+  margin-bottom: 10px;
+  font-size: 15px;
   text-decoration: none;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
 }
 /*# sourceMappingURL=style.css.map */
