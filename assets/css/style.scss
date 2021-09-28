@@ -2,19 +2,16 @@
     margin: 0;
     padding: 0;
     color: #FFFFFF;
-    //background:red;
     font-family: 'Roboto', sans-serif;
     font-size:24px;
-    //list-style: none;
     text-decoration: none;
-}
+    }
 
 body{
     
     background-image: url('../img/fundo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    //position: absolute;
     width: 100%;
     height:100%;
 
@@ -23,137 +20,96 @@ body{
         position: absolute;
         width: 100%;
         height:100%;
-        
         background-color: rgba(27, 76, 31, 0.25);
         transform: rotate(0.02deg);
         background-repeat: no-repeat;
     
             //retangulo acaba aqui            
-            }       
+              }       
         //body aqui 
-        }
-       
-        /* Xisto_LogoHorizontalContorno 1 */
-        #logo0{
-            z-index: -999;
-            position:relative;
-            padding-top:40%;
-            //  display:flex;
-        }
-        #logo{
-            //mudar posição da logo
-            min-width: 600px;
-            min-height: 600px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            //padding-top:30%;
-            //position: fixed;
-            //background: black;
-            //color: white;
-            //@at-root: 1em;
-            //padding: 1em;
-            position: absolute;
-            //height: 10em;
-            //display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            //background: yellow;
-            //position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%) ;
-            //left: 30.25%;
-            //right: 30.25%;
-            //top: 5.1666%;
-            //bottom: 28.2%;
-            width: auto;
-            height: auto;
+    }
+      
+#logo0{
+    z-index: -999;
+    position:relative;
+    padding-top:40%;
+    }
+
+#logo{
+    //mudar posição da logo
+    min-width: 600px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+
+    width: auto;
+    height: auto;
+
+    background-image: url('../img/logo.png');
+    display:flex;
+    }
+
+main{
+    width:100%;
+    height:90vh;
+    .btns{
+        z-index: 1;
+        margin-top:-10%; 
+        display:flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding:50px, 50px, 50px, 50px;
+        flex-wrap: wrap;
+                    
+        #btn1{
+                
+            box-sizing: border-box;
+            border-radius: 100px;
+            padding:20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-right: 70px;
             
-            background-image: url('../img/logo.png');
-            display:flex;
+            background: rgba(27, 76, 31, 0.71);
+
+            span{
+                justify-content: center;
+                text-align: center;
+                align-content: center;
+                font-style: normal;
+    
+                }
             }
-
-
-    /* Xisto_LogoHorizontalContorno 1 */
-    main{
-        ///height: 10em;
-        /*display: flex;
-        align-items: center;*/
-        //justify-content: center;
-        width:100%;
-        height:90vh;
-        //position: relative;
-        .btns{
-            z-index: 1;
-            margin-top:-10%; 
-            display:flex;
-            width: 100%;
-            height: auto;
-            //align-content: center;
-            justify-content: center;
-            padding:50px, 50px, 50px, 50px;
-            flex-wrap: wrap;
-                       
-
-            #btn1{
-                    
-                box-sizing: border-box;
-                border-radius: 100px;
-                //justify-content: center;
-                //text-align: center;
-                //align-content: center;
-                padding:20px;
-                padding-left: 50px;
-                padding-right: 50px;
-                margin-right: 70px;
-                
-                background: rgba(27, 76, 31, 0.71);
-
-                span{
-                    
-                    justify-content: center;
-                    text-align: center;
-                    align-content: center;
-       
-                    font-style: normal;
-                    //font-weight: 300;
-                    }
-                }
-            
-            #btn2{
-                //nossos serviços
-            
-                border: 1px solid #E5E5E5;
-                box-sizing: border-box;
-                border-radius: 100px;
-                //justify-content: center;
-                //text-align: center;
-                //align-content: center;
-                padding:20px;
-                padding-left: 50px;
-                padding-right: 50px;
-                margin-left: 100px;
-                span{
-                    
-                    justify-content: center;
-                    text-align: center;
-                    align-content: center;
-                    
-                    
-                                        
-                        
-                    
-                    font-style: normal;
-                    //font-weight: 300;
-                    
-                
-                    }
-                }
-                }
         
-        }
+        #btn2{
+            border: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            border-radius: 100px;
+            padding:20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 100px;
+            span{
+                
+                justify-content: center;
+                text-align: center;
+                align-content: center;
+                font-style: normal;            
+                }
+            }
+         }
+    }
     img{
         z-index: -999;
     top: 0px;
@@ -164,27 +120,19 @@ body{
     height:auto;
     left: 0;
     top: 0px;
-    //left: -163px;
-    //top: -1357px;
-}
+        }
 
 nav{
     z-index: 1;
     position: fixed;
     text-align: center;
-    //padding-left: 0px;
     align-content: center;
     justify-content: center;
-    //left: 955px;
-   
-//    margin-right: 0px;
-    //margin-bottom: 10px;
     width: 100%;
     height: 10vh;
-    //left: 0px;
    
     border-bottom: 1px solid #FFFFFF;
-    //margin-bottom: 10%;       
+
     ul{
         
         align-content: center;
@@ -194,23 +142,15 @@ nav{
         
         
         a{
-            /*align-content: center;
-            text-align: center;
-            justify-content: center;*/
-            padding: 2vh;
-            //padding-bottom:10px;    
-            
+            padding: 2vh;     
             text-decoration: none;  
             display: inline-block;
             
             li{
-                
-                
+
                 min-height: 4.4vh;
                 max-height: 10vh;
                 font-size: 15px;
-                //align-content: center;
-                //text-align: center;
                 padding: 5px;  
                 display: inline-block;  
                 }
@@ -223,12 +163,13 @@ nav{
         }     
 
     }
+
 .text{
-    //margin-left: 10%;
     display:flex;
     justify-content: center;
     margin-top:3%;
-}
+    }
+
 a{
     display: block;
-}
+    }
