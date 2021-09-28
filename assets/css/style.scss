@@ -5,6 +5,8 @@
     //background:red;
     font-family: 'Roboto', sans-serif;
     font-size:24px;
+    //list-style: none;
+    text-decoration: none;
 }
 
 body{
@@ -32,34 +34,68 @@ body{
         }
        
         /* Xisto_LogoHorizontalContorno 1 */
+        #logo0{
+            z-index: -999;
+            position:relative;
+            padding-top:40%;
+            //  display:flex;
+        }
         #logo{
-            //mudar posião da logo
+            //mudar posição da logo
             min-width: 600px;
             min-height: 600px;
             background-repeat: no-repeat;
             background-size: cover;
+            //padding-top:30%;
+            //position: fixed;
+            //background: black;
+            //color: white;
+            //@at-root: 1em;
+            //padding: 1em;
             position: absolute;
-            left: 30.25%;
-            right: 30.25%;
-            top: 5.1666%;
-            bottom: 28.2%;
+            //height: 10em;
+            //display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            //background: yellow;
+            //position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) ;
+            //left: 30.25%;
+            //right: 30.25%;
+            //top: 5.1666%;
+            //bottom: 28.2%;
             width: auto;
             height: auto;
-
+            
             background-image: url('../img/logo.png');
+            display:flex;
             }
 
 
     /* Xisto_LogoHorizontalContorno 1 */
     main{
+        ///height: 10em;
+        /*display: flex;
+        align-items: center;*/
+        //justify-content: center;
+        width:100%;
+        height:90vh;
+        //position: relative;
         .btns{
-            margin-top:53vh; 
+            z-index: 1;
+            margin-top:-10%; 
             display:flex;
+            width: 100%;
+            height: auto;
             //align-content: center;
             justify-content: center;
-            padding:50%, 50px, 50px, 50px;
-            
-            
+            padding:50px, 50px, 50px, 50px;
+            flex-wrap: wrap;
+                       
 
             #btn1{
                     
@@ -119,6 +155,7 @@ body{
         
         }
     img{
+        z-index: -999;
     top: 0px;
     position: relative;
     max-width: 100%;
@@ -132,58 +169,66 @@ body{
 }
 
 nav{
-    text-align: right;
+    z-index: 1;
+    position: fixed;
+    text-align: center;
     //padding-left: 0px;
     align-content: center;
+    justify-content: center;
     //left: 955px;
-    //font-style: normal;
-    //font-weight: normal;
-    
-    //padding-top:5% ;
-    /* identical to box height */
-
-    //linha
-    //position:fixed;
-    top:10%;
-    right: 0px;
+   
+//    margin-right: 0px;
     //margin-bottom: 10px;
     width: 100%;
-    height: 10%;
+    height: 10vh;
     //left: 0px;
    
     border-bottom: 1px solid #FFFFFF;
     //margin-bottom: 10%;       
     ul{
-        padding-top: 1%;
-        padding-bottom:1%;
-        //margin-top: ;
+        
         align-content: center;
+        text-align: right;
         justify-content: center;
-        li{
-            //justify-content: center;
-            text-align: right;
-            //padding-top: 50%;
-            padding-right: 3%;
-            //align-content: center;
-            //left: 955px;
-            vertical-align: middle;    
-            display: inline;
+        
+        
+        
+        a{
+            /*align-content: center;
+            text-align: center;
+            justify-content: center;*/
+            padding: 2vh;
+            //padding-bottom:10px;    
             
-            a{
-                margin-bottom:10px;    
+            text-decoration: none;  
+            display: inline-block;
+            
+            li{
+                
+                
+                min-height: 4.4vh;
+                max-height: 10vh;
                 font-size: 15px;
-                text-decoration: none;    
+                //align-content: center;
+                //text-align: center;
+                padding: 5px;  
+                display: inline-block;  
                 }
+               
             }
-            //#blog{
-            //  margin-right: 15px;
-            //}
+            a:hover{
+                background: rgba(27, 76, 31, 0.71);
+                
+            }
         }     
-}
 
+    }
 .text{
     //margin-left: 10%;
     display:flex;
     justify-content: center;
     margin-top:3%;
+}
+a{
+    display: block;
 }
